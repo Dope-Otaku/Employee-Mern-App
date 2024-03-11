@@ -1,0 +1,15 @@
+server/models/  server/node_modules/@hapi/   server/node_modules/@sideway/
+        server/node_modules/buffer-equal-constant-time/
+        server/node_modules/ecdsa-sig-formatter/
+        server/node_modules/joi-password-complexity/
+        server/node_modules/joi/
+        server/node_modules/jsonwebtoken/
+        server/node_modules/jwa/
+        server/node_modules/jws/
+        server/node_modules/lodash.includes/
+        server/node_modules/lodash.isboolean/
+        server/node_modules/lodash.isinteger/
+        server/node_modules/lodash.isnumber/
+        server/node_modules/lodash.isplainobject/
+        server/node_modules/lodash.isstring/
+        server/node_modules/lodash.once/
