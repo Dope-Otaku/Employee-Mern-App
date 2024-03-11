@@ -1,7 +1,9 @@
-const mongosse = require("mongoose");
+const mongoose = require("mongoose");
 const jwt = require("jsonwebtoken");
+const Joi = require("joi");
+const passwordComplexity = require("joi-password-complexity");
 
-const userSchema = new mongosse.Schema({
+const userSchema = new mongoose.Schema({
   firstName: { type: String, required: true },
   lastName: { type: String, required: true },
   email: { type: String, required: true },

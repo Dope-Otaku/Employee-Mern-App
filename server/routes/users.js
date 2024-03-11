@@ -9,11 +9,11 @@ router.post("/", async (req, res) => {
       return res.status(400).send({ message: error.details[0].message });
     }
     const user = await User.findOne({ email: req.body.email });
-    if (user) {
+    if (user)
       return res
         .status(409)
         .send({ message: "User with given email already exist!" });
-    }
+
     const salt = await bcrypt.genSalt(Number(process.env.SALT));
     const hashPassword = await bcrypt.hash(req.body.password, salt);
 
@@ -23,3 +23,5 @@ router.post("/", async (req, res) => {
     res.status(500).send({ message: "Internal Server Error!" });
   }
 });
+
+module.exports = router;
